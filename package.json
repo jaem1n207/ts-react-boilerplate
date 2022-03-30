@@ -1,0 +1,23 @@
+{
+  "name": "ts-react-boilerplate",
+  "version": "1.0.0",
+  "description": "TS + React + TailwindCSS 조합을 빠르게 시작하기 위해 만든 저장소입니다.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaem1n207/ts-react-boilerplate"
+  },
+  "author": "jaem1n207 <roy.jm.lee@gmail.com>",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
