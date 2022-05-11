@@ -7,6 +7,14 @@
     "type": "git",
     "url": "https://github.com/jaem1n207/ts-react-boilerplate"
   },
+  "scripts": {
+    "start": "rm -rf dist && webpack --mode=development --config webpack/webpack.dev.js",
+    "startWatch": "npm-run-all --parallel startWatch:*",
+    "startWatch:build-client": "webpack --config  webpack/webpack.dev.js --watch --no-cache",
+    "build:prod": "rm -rf ./dist && webpack --config webpack/webpack.prod.js",
+    "build:dev": "rm -rf ./dist && webpack --config webpack/webpack.dev.js",
+    "checkTypes": "tsc --declaration"
+  },
   "author": "jaem1n207 <roy.jm.lee@gmail.com>",
   "browserslist": {
     "production": [
@@ -25,15 +33,35 @@
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
     "@babel/preset-typescript": "^7.16.7",
+    "@loadable/babel-plugin": "^5.13.2",
+    "@loadable/webpack-plugin": "^5.15.2",
+    "@types/loadable__component": "^5.13.4",
     "@types/react": "^17.0.43",
     "@types/react-dom": "^17.0.14",
+    "@types/webpack-dev-middleware": "^5.3.0",
+    "@types/webpack-hot-middleware": "^2.25.6",
     "babel-loader": "^8.2.4",
+    "css-minimizer-webpack-plugin": "^3.4.1",
+    "html-webpack-plugin": "^5.5.0",
+    "npm-run-all": "^4.1.5",
+    "terser-webpack-plugin": "^5.3.1",
     "typescript": "^4.6.3",
     "webpack": "^5.70.0",
-    "webpack-cli": "^4.9.2"
+    "webpack-bundle-analyzer": "^4.5.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4",
+    "webpack-hot-middleware": "^2.25.1",
+    "webpack-merge": "^5.8.0"
   },
   "dependencies": {
+    "@loadable/component": "^5.15.2",
+    "@loadable/server": "^5.15.2",
+    "@types/react-router-config": "^5.0.6",
+    "@types/react-router-dom": "^5.3.3",
+    "mini-css-extract-plugin": "^2.6.0",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "react-router-config": "^5.1.1",
+    "react-router-dom": "^6.3.0"
   }
 }

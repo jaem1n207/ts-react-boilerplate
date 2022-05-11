@@ -13,9 +13,8 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "noEmit": false,
-    "jsx": "react",
-    "typeRoots": ["src/types"]
+    "jsx": "react"
   },
-  "include": ["src"],
+  "include": ["src", "webpack", "utils"],
   "exclude": ["build", "node_modules"]
 }
